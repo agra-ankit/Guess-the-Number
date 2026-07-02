@@ -105,9 +105,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0.4rem;
   margin-top: 1rem;
 }
-input[id="guess"] {
+#guessInput {
   width: 140px;
-  background-color: rgb(164, 170, 170);
+  background-color: rgb(170, 164, 164);
   border-radius: 0.4rem;
   box-shadow: 0 0 10px rgba(141, 142, 143, 0.5);
+  padding: 0.1rem;
+  text-align: center;
 }
