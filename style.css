@@ -1,0 +1,113 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+button:enabled{
+  cursor: pointer;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  background-color: #212121;
+  color: #9c9696;
+  font-size: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+
+
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  color: #9c9b99;
+  font-size: 1.5rem;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.wrapper {
+  max-width:920px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(151, 147, 147, 0.5);
+  padding: 4rem;
+  
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  color: rgb(207, 188, 180);
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 0.65rem;
+
+}
+.btn {
+  padding: 0.4em 1.5em;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(17, 13, 13, 0.603);
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+input[id="guess"] {
+  width: 140px;
+  background-color: rgb(164, 170, 170);
+  border-radius: 0.4rem;
+  box-shadow: 0 0 10px rgba(141, 142, 143, 0.5);
+}
